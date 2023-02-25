@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* header-menu-selected */
+
+#menu-selected{
+    position: fixed;
+    width: 100%;
+    height: 14%;
+   background: rgba(27, 39, 61, 0.95);
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 2;
+   padding:10px 15px;
+}
+.logo-menu ,.menu{
+display: flex;
+}
+.menu{
+    display: flex;
+}
+.select{
+    display:flex ;
+    align-items: center;
+}
+.select ul{
+    list-style: none;
+    display:flex;
+}
+.select ul li{
+   margin: 10px;
+}
+.select ul li .a2{
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 20px;
+  width: 170px;
+  display: block;
+  font-weight: 400;
+}
+.select ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    width: 90px;
+    display: block;
+}
+
+.select button{
+    background:yellow;
+    width:180px ;
+    height: 60px;
+  font-size:23px;
+  border-radius:5px ;
+  color: rgb(74, 37, 170);
+  font-weight:400;
+}
+.select button:hover{
+    border-radius:30px ;
+    background: yellow;
+    color:white;
+    transition: 0.5s;
+}
+.select ul li a:hover{
+   color:rgb(74, 37, 170);
+}
+
+/* header container */
+
+#banner{
+    height: 100vh;
+    width: 100%;
+}
+.broad{
+    background:url(/imgs/banner.gif);
+    background-size:cover;
+    background-position: center;
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.broad .time{
+    width: calc(25%);
+    color:white;
+    position:relative;
+    text-align: center;
+}
+.broad .time p:nth-child(1){
+    font-size: 200px;
+    font-style:italic;
+    font-weight: bold 700;
+    font-family: 'Lora', serif;
+font-family: 'Roboto', sans-serif;
+    line-height: 100px;
+}
+.broad .time p:nth-child(2){
+    top: 123%;
+    left: 44%;
+    position:absolute;
+    font-size: 20px;
+}
+.greeting {
+    text-align: center;
+    padding-top:70px ;
+}
+.greeting h1{
+    font-size:50px;
+    font-weight:999;
+}
+.greeting p{
+    font-size:40px;
+    color:red;
+    font-weight: 600s;
+}
+
+@media screen and (max-width:420px) {
+    .broad .time p:nth-child(1){
+        font-size: 60px;
+    }
+    .broad .time p:nth-child(2)
+    {
+         font-size: 18px;
+        transform: translate(-50%,-210%);
+    }
+}

@@ -76,7 +76,7 @@ display: flex;
     width: 100%;
 }
 .broad{
-    background:url(/imgs/banner.gif);
+    background:url(../imgs/banner.gif);
     background-size:cover;
     background-position: center;
     height: 75vh;

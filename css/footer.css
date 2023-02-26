@@ -6,7 +6,7 @@
 #footer{
     width: 100%;
     height:50%;
-    background:url(/imgs/footer-bg.jpg) center center / cover;
+    background:url(../imgs/footer-bg.jpg) center center / cover;
     background-position: center center;
     color: white;
 }
